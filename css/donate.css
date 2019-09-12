@@ -182,28 +182,8 @@ body {
   vertical-align: sub;
 }
 
-
 .donation-projectchoice_wrapper {
   padding: 0;
-}
-
-.card {
-  margin-bottom: 1em;
-  border: none;
-}
-
-.card-header {
-  background: #;
-  color: #5091cd;
-  margin-bottom: 0.5em;
-  border: none;
-  shadow: none;
-  cursor: pointer;
-}
-
-.card-header h2 {
-  color: #004990;
-  font-size: 1em;
 }
 
 /* FACTS/INTRO SECTION */
@@ -231,14 +211,39 @@ body {
 
 .blockquote {
   font-weight: 300;
-  color:#5091cd;
+  color: #5091cd;
 }
+
 .bible-verse blockquote span {
   font-weight: bold;
-  color:#004990;
+  color: #004990;
 }
-/* OTHER WAYS TO GIVE SECTION */
 
+/* OTHER WAYS TO GIVE SECTION */
+.other-ways {
+  background: #;
+}
+.other-ways h3 {
+  color:;font-weight: bold;
+}
+.card {
+  margin-bottom: 1em;
+  border: none;
+}
+
+.card-header {
+  background: ;
+  color: #5091cd;
+  margin-bottom: 0.5em;
+  border: none;
+  shadow: none;
+  cursor: pointer;
+}
+
+.card-header h2 {
+  color: #004990;
+  font-size: 1em;
+}
 
 /* CALL TO ACTION SECTION */
 
@@ -262,21 +267,13 @@ hr {
  No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-  
-}
+@media (min-width: 576px) {}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  
-}
+@media (min-width: 768px) {}
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-  
-}
+@media (min-width: 992px) {}
 
 /*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-  
-}
+@media (min-width: 1200px) {}

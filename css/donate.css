@@ -229,7 +229,7 @@ body {
   padding: 4em 0;
 }
 
-blockquote {
+.blockquote {
   font-weight: 300;
   color:#5091cd;
 }
@@ -258,143 +258,25 @@ hr {
 }
 
 
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
+/* Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
 
-// Small devices (landscape phones, 576px and up)
+/* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-  @media (min-width: 992px) {
-  .donatebox {
-    display: block;
-    text-align: center;
-    width: 500px;
-    padding: 3em 2em 2em 2em;
-    opacity: ;
-    border-top: 6px solid #;
-    border-bottom: 1px solid #eee;
-    border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
-    background-color: rgba(255, 255, 255);
-    margin: 4em 0;
-  }
-
-  .donatebox-h1 {
-    color: #000;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0 0 1em 0;
-    font-size: 35px;
-  }
-
-  .donatebox h2 {
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
-  }
-
-  /* Donation type (single or regular) */
-
-  .donation-type_wrapper {
-    list-style-type: none;
-    text-align: center;
-    margin: 0 auto;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-  }
-
-  .donation_type {
-    background: #fff;
-    font-size: 1em;
-    font-weight: bold;
-    border: 2px solid #5091cd;
-    width: 100%;
-    padding: 0.5em;
-    border-radius: 0;
-
-  }
-
-  .donation_type.active {
-    background: #5091cd;
-    border: 2px solid #5091cd;
-    color: #fff;
-  }
-
-
-  /* Donation amount */
-
-  .donation-amount_wrapper {
-    list-style-type: none;
-    text-align: center;
-    margin: 0 auto;
-    display: inline-block;
-    text-align: center;
-    padding: 1em 0 0 0;
-    width: 100%;
-  }
-
-  .donation_amount {
-    border: 2px solid #5091cd;
-    padding: 1em;
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: bold;
-    color: #5091cd;
-    border-radius: 0;
-    text-transform: none;
-    background: #fff;
-    width: 100%;
-  }
-
-  .donation_amount.active {
-    background: #5091cd;
-    border: 2px solid #5091cd;
-    color: #fff;
-  }
-
-  .amount-hide-radio {
-    visibility: hidden;
-  }
-
-  .other-amount {
-    border: 2px solid #5091cd;
-    height: 50px;
-    width: 100px;
-    padding: 10px 0 10px 10px;
-  }
-
-  #otheramount {
-    transition: all 1s ease-in;
-    padding: 1em 0;
-  }
-
-  .other-amount-text {
-    font-size: 20px;
-  }
-
-  .other-amount-pound {
-    font-size: 25px;
-    font-weight: bold;
-    color: #004990;
-  }
-
-  .donation-projectchoice_wrapper {
-    padding: 0;
-  }
+  
 }
 
-// Medium devices (tablets, 768px and up)
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  ...
+  
 }
 
-// Large devices (desktops, 992px and up)
-
-
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  
 }
 
-// Extra large devices (large desktops, 1200px and up)
+/*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  ...
+  
 }

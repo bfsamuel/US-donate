@@ -170,6 +170,9 @@ body {
   height: 50px;
   width: calc(100% - 35px);
   padding: 10px 0 10px 15px;
+  border-radius: 0;
+  -webkit-appearance: none;
+
 }
 
 .other-amount-pound {
@@ -361,6 +364,7 @@ hr {
     height: 50px;
     width: calc(100% - 35px);
     padding: 10px 0 10px 15px;
+    
   }
 
   .other-amount-pound {

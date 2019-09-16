@@ -16,7 +16,7 @@ body {
 
 .btn-primary {
   background: #5091cd;
-  border:none;
+  border: none;
   color: #fff;
   padding: 0.5em 2em;
   text-decoration: none;
@@ -64,7 +64,7 @@ body {
 .mast-header {
   background: url('../img/PAKISTAN_032019_65.jpg') no-repeat;
   background-size: 100%;
-  background-position:;
+  background-position: ;
   padding: 3em 0;
 }
 
@@ -75,11 +75,9 @@ body {
 /* MAIN DONATE BOX */
 
 .donatebox {
-  display: ;
   text-align: center;
   width: 100%;
   padding: 2em 2em 2em 2em;
-  border-top: 6px solid #;
   border-bottom: 1px solid #eee;
   border-right: 1px solid #eee;
   border-left: 1px solid #eee;
@@ -181,6 +179,7 @@ body {
   display: inline-block;
   vertical-align: sub;
 }
+
 .donate-buttons {
   padding: 1em 0;
 }
@@ -219,19 +218,17 @@ body {
 }
 
 /* OTHER WAYS TO GIVE SECTION */
-.other-ways {
-  background: #;
-}
+
 .other-ways h3 {
-  color:;font-weight: bold;
+  font-weight: bold;
 }
+
 .card {
   margin-bottom: 1em;
   border: none;
 }
 
 .card-header {
-  background: ;
   color: #5091cd;
   margin-bottom: 0.5em;
   border: none;
@@ -270,17 +267,16 @@ hr {
 @media (min-width: 576px) {
   .donatebox {
     text-align: center;
-    width:500px;
+    width: 500px;
     padding: 2em 2em 2em 2em;
-    border-top: 6px solid #;
     border-bottom: 1px solid #eee;
     border-right: 1px solid #eee;
     border-left: 1px solid #eee;
     background-color: rgba(255, 255, 255);
-    margin: 4em 0;
-  
+    margin:2em 0;
+
   }
-  
+
   .donatebox-h1 {
     color: #000;
     font-weight: bold;
@@ -289,15 +285,15 @@ hr {
     padding: 0 0 1em 0;
     font-size: 25px;
   }
-  
+
   .donatebox h2 {
     padding: 0;
     margin: 0;
     text-transform: uppercase;
   }
-  
+
   /* Donation type (single or regular) */
-  
+
   .donation-type_wrapper {
     list-style-type: none;
     text-align: center;
@@ -306,7 +302,7 @@ hr {
     text-align: center;
     width: 100%;
   }
-  
+
   .donation_type {
     background: #fff;
     font-size: 1em;
@@ -315,17 +311,17 @@ hr {
     width: 100%;
     padding: 0.5em;
     border-radius: 0;
-  
+
   }
-  
+
   .donation_type.active {
     background: #5091cd;
     border: 2px solid #5091cd;
     color: #fff;
   }
-  
+
   /* Donation amount */
-  
+
   .donation-amount_wrapper {
     list-style-type: none;
     text-align: center;
@@ -335,7 +331,7 @@ hr {
     padding: 0;
     width: 100%;
   }
-  
+
   .donation_amount {
     border: 2px solid #5091cd;
     padding: 0.5em;
@@ -348,24 +344,24 @@ hr {
     background: #fff;
     width: 100%;
   }
-  
+
   .donation_amount.active {
     background: #5091cd;
     border: 2px solid #5091cd;
     color: #fff;
   }
-  
+
   .amount-hide-radio {
     visibility: hidden;
   }
-  
+
   .other-amount {
     border: 2px solid #5091cd;
     height: 50px;
     width: calc(100% - 35px);
     padding: 10px 0 10px 15px;
   }
-  
+
   .other-amount-pound {
     font-size: 25px;
     font-weight: bold;
@@ -374,7 +370,10 @@ hr {
     display: inline-block;
     vertical-align: sub;
   }
-  
+
+  .mast-header {
+    background-position: 50%;
+  }
 
 }
 

@@ -78,7 +78,7 @@ body {
 .donatebox {
   text-align: center;
   width: 100%;
-  padding: 2em 2em 2em 2em;
+  padding: 0 2em 2em 2em;
   border-bottom: 1px solid #eee;
   border-right: 1px solid #eee;
   border-left: 1px solid #eee;
@@ -263,7 +263,9 @@ hr {
   background: #fff;
 }
 
-
+#fc-473947bc7846 .header__amount--show {
+  margin-top: 1em !important;
+}
 /* Extra small devices (portrait phones, less than 576px)
  No media query for `xs` since this is the default in Bootstrap */
 
@@ -272,7 +274,7 @@ hr {
   .donatebox {
     text-align: center;
     width: 450px;
-    padding: 2em 2em 2em 2em;
+    padding:0em 2em 2em 2em;
     border-bottom: 1px solid #eee;
     border-right: 1px solid #eee;
     border-left: 1px solid #eee;

@@ -94,8 +94,8 @@ body {
 }
 
 .donatebox-h1 {
-  color: #000;
-  font-weight: ;
+  color: #004990;
+  font-weight: 600;
   text-transform: ;
   text-align: center;
   padding: 0 0 1em 0;
@@ -137,6 +137,12 @@ body {
   color: #fff;
 }
 
+#singleblock, #monthlyblock{
+  display:none;
+}
+#singleblock.active, #monthlyblock.active{
+  display:inline-block;
+}
 /* Donation amount */
 
 .donation-amount_wrapper {

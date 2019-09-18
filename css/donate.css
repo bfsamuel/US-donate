@@ -202,18 +202,18 @@ body {
 
 /* FACTS/INTRO SECTION */
 
-.facts {
+.intro {
   background: #eee;
   padding: 3em 1em;
 }
 
-.facts h3 {
+.intro-text {
   color: #5091cd;
   font-weight: bold;
   font-size:;
 }
 
-.facts h3 span {
+.intro p span {
   color: #004990;
 }
 

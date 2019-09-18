@@ -46,20 +46,24 @@ body {
 
 /* HEADER */
 
-.logo {
+.logo img{
   text-align: center;
   padding: 1em;
-  margin: 222px
+width:150px;
 }
 
 #logo {
-  padding: 1em;
+  padding: 1em 0;
 }
-
+#logo img {
+  padding:;
+  width:150px;
+}
 .secure-donation {
   padding-right: 1em;
   color: #2e3131;
   margin: 0;
+  font-size:1em;
 }
 
 

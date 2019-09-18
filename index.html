@@ -41,9 +41,8 @@
             <div class="container">
 
                 <div class="d-flex align-items-center justify-content-between">
-                    <div id="logo"><img src="img/barnabas-aid-logo.png" style="width:200px;"></div>
-                    <p class="secure-donation">Supporter Care: <a class="" href="tel:(703) 288-1681">(703)
-                            288-1681</a></a>
+                    <div id="logo"><img src="img/barnabas-aid-logo.png"></div>
+                    <p class="secure-donation"><strong>Supporter Care:</strong> (703) 288-1681
                     </p>
                 </div>
             </div>
@@ -73,50 +72,50 @@
                     </div>
 
 
-                   <!--Changes made from here...-->
-                        <div class="donation-amount_wrapper active" id="singleblock">
-                            <ul class="btn-group btn-group-toggle full-width " data-toggle="buttons">
-                                <li class="btn donation_amount active">
-                                    <input type="radio" name="amounts" id="amount1" autocomplete="off" data-amount="45">
-                                    &#36;45
-                                </li>
-                                <li class="btn donation_amount">
-                                    <input type="radio" name="amounts" id="amount2" autocomplete="off"
-                                        data-amount="100">&#36;100
-                                </li>
-                                <li class="btn donation_amount">
-                                    <input type="radio" name="amounts" id="amount3" autocomplete="off"
-                                        data-amount="250">&#36;250
-                                </li>
-                                <li class="btn donation_amount">
-                                    <input type="radio" name="amounts" id="amount4" autocomplete="off"
-                                        data-amount="500">&#36;500
-                                </li>
+                    <!--Changes made from here...-->
+                    <div class="donation-amount_wrapper active" id="singleblock">
+                        <ul class="btn-group btn-group-toggle full-width " data-toggle="buttons">
+                            <li class="btn donation_amount active">
+                                <input type="radio" name="amounts" id="amount1" autocomplete="off" data-amount="45">
+                                &#36;45
+                            </li>
+                            <li class="btn donation_amount">
+                                <input type="radio" name="amounts" id="amount2" autocomplete="off"
+                                    data-amount="100">&#36;100
+                            </li>
+                            <li class="btn donation_amount">
+                                <input type="radio" name="amounts" id="amount3" autocomplete="off"
+                                    data-amount="250">&#36;250
+                            </li>
+                            <li class="btn donation_amount">
+                                <input type="radio" name="amounts" id="amount4" autocomplete="off"
+                                    data-amount="500">&#36;500
+                            </li>
 
-                            </ul>
-                        </div>
-                        <div class="donation-amount_wrapper" id="monthlyblock">
-                            <ul class="btn-group btn-group-toggle full-width " data-toggle="buttons">
-                                <li class="btn donation_amount">
-                                    <input type="radio" name="amounts" id="amount5" autocomplete="off" data-amount="10">
-                                    &#36;10
-                                </li>
-                                <li class="btn donation_amount">
-                                    <input type="radio" name="amounts" id="amount6" autocomplete="off"
-                                        data-amount="25">&#36;25
-                                </li>
-                                <li class="btn donation_amount">
-                                    <input type="radio" name="amounts" id="amount7" autocomplete="off"
-                                        data-amount="50">&#36;50
-                                </li>
-                                <li class="btn donation_amount">
-                                    <input type="radio" name="amounts" id="amount8" autocomplete="off"
-                                        data-amount="100">&#36;100
-                                </li>
+                        </ul>
+                    </div>
+                    <div class="donation-amount_wrapper" id="monthlyblock">
+                        <ul class="btn-group btn-group-toggle full-width " data-toggle="buttons">
+                            <li class="btn donation_amount">
+                                <input type="radio" name="amounts" id="amount5" autocomplete="off" data-amount="10">
+                                &#36;10
+                            </li>
+                            <li class="btn donation_amount">
+                                <input type="radio" name="amounts" id="amount6" autocomplete="off"
+                                    data-amount="25">&#36;25
+                            </li>
+                            <li class="btn donation_amount">
+                                <input type="radio" name="amounts" id="amount7" autocomplete="off"
+                                    data-amount="50">&#36;50
+                            </li>
+                            <li class="btn donation_amount">
+                                <input type="radio" name="amounts" id="amount8" autocomplete="off"
+                                    data-amount="100">&#36;100
+                            </li>
 
-                            </ul>
-                        </div>
-<!--to here...-->
+                        </ul>
+                    </div>
+                    <!--to here...-->
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">$</span>
@@ -323,14 +322,14 @@
                 if (val != "o" || val != "m") {
                     clearTags();
                     $(".btn-donate").attr("data-frequency", val);
-                    if (val==="o"){
+                    if (val === "o") {
                         $("#monthlyblock").removeClass("active");
-                        if (!($("#singleblock").hasClass("active"))){
+                        if (!($("#singleblock").hasClass("active"))) {
                             $("#singleblock").addClass("active");
                         }
                     } else {
                         $("#singleblock").removeClass("active");
-                        if (!($("#monthlyblock").hasClass("active"))){
+                        if (!($("#monthlyblock").hasClass("active"))) {
                             $("#monthlyblock").addClass("active");
                         }
                     }

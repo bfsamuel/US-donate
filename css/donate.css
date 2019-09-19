@@ -46,24 +46,26 @@ body {
 
 /* HEADER */
 
-.logo img{
+.logo img {
   text-align: center;
   padding: 1em;
-width:150px;
+  width: 150px;
 }
 
 #logo {
   padding: 1em 0;
 }
+
 #logo img {
-  padding:;
-  width:150px;
+  padding: ;
+  width: 150px;
 }
+
 .secure-donation {
   padding-right: 1em;
   color: #2e3131;
   margin: 0;
-  font-size:1em;
+  font-size: 1em;
 }
 
 
@@ -141,12 +143,16 @@ width:150px;
   color: #fff;
 }
 
-#singleblock, #monthlyblock{
-  display:none;
+#singleblock,
+#monthlyblock {
+  display: none;
 }
-#singleblock.active, #monthlyblock.active{
-  display:inline-block;
+
+#singleblock.active,
+#monthlyblock.active {
+  display: inline-block;
 }
+
 /* Donation amount */
 
 .donation-amount_wrapper {
@@ -165,7 +171,7 @@ width:150px;
   font-size: 1em;
   text-align: center;
   font-weight: bold;
-  color:#004990;
+  color: #004990;
   border-radius: 0;
   text-transform: none;
   background: #fff;
@@ -220,7 +226,7 @@ width:150px;
 .intro-text {
   color: #5091cd;
   font-weight: bold;
-  font-size:;
+  font-size: ;
 }
 
 .intro p span {
@@ -312,7 +318,7 @@ hr {
     padding: 2.5em 2em;
     border: 1px solid #eee;
     background-color: rgba(255, 255, 255);
-    margin: 5em 0;
+    margin: 6em 0;
     vertical-align: middle;
   }
 
@@ -406,9 +412,25 @@ hr {
     min-height: 100%;
     vertical-align: middle;
   }
-.mast-header:after {
-  display: none;
-}
+
+  .mast-header:after {
+    display: none;
+  }
+
+  .intro {
+    background: #eee;
+    padding: 3em 1em;
+  }
+
+  .intro-text {
+    color: #5091cd;
+    font-weight: bold;
+    font-size: 1.6em;
+  }
+
+  .intro p span {
+    color: #004990;
+  }
 }
 
 

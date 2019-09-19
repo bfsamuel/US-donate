@@ -102,10 +102,9 @@ body {
 .donatebox-h1 {
   color: #004990;
   font-weight: 600;
-  text-transform: ;
   text-align: center;
   padding: 0 0 1em 0;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .donatebox h2 {
@@ -325,10 +324,9 @@ hr {
   .donatebox-h1 {
     color: #004990;
     font-weight: 600;
-    text-transform: ;
     text-align: center;
     padding: 0 0 1em 0;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   /* Donation type (single or regular) */
@@ -409,7 +407,7 @@ hr {
     background: url('../img/PAKISTAN_032019_65.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100%;
+    height: calc(100% - 85px);
     vertical-align: middle;
   }
 

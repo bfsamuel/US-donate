@@ -14,9 +14,11 @@ body {
   border-radius: 0;
 }
 
-.btn.focus, .btn:focus {
-box-shadow:0 !important;
+.btn.focus,
+.btn:focus {
+  box-shadow: 0 !important;
 }
+
 .btn-primary {
   background: #5091cd;
   border: none;
@@ -34,7 +36,6 @@ box-shadow:0 !important;
   color: rgb(44, 36, 36);
   text-decoration: none;
   text-align: center;
-  text-transform: ;
   line-height: 30px;
   font-weight: bold;
   border-radius: 0;
@@ -46,8 +47,9 @@ box-shadow:0 !important;
   cursor: pointer;
   width: 100%;
 }
+
 .btn-donate:disabled {
-  opacity:0.6;
+  opacity: 0.6;
   cursor: not-allowed;
 }
 
@@ -64,7 +66,6 @@ box-shadow:0 !important;
 }
 
 #logo img {
-  padding: ;
   width: 150px;
 }
 
@@ -133,7 +134,6 @@ box-shadow:0 !important;
 
 .donation_type {
   background: #fff;
-  color: #;
   font-size: 1em;
   font-weight: bold;
   border: 2px solid #5091cd;
@@ -232,7 +232,6 @@ box-shadow:0 !important;
 .intro-text {
   color: #5091cd;
   font-weight: bold;
-  font-size: ;
 }
 
 .intro p span {
@@ -263,7 +262,9 @@ box-shadow:0 !important;
 .other-ways h3 {
   font-weight: bold;
 }
-
+.other-ways-image {
+  width:100%;
+}
 .card {
   margin-bottom: 1em;
   border: none;
@@ -278,11 +279,14 @@ box-shadow:0 !important;
   cursor: pointer;
 }
 
-.card-header h2 {
+.card-header p {
   color: #004990;
-  font-size: 1.2em;
   font-weight: bold;
 }
+.card-header p span{
+padding-left:15px;
+}
+
 
 /* CALL TO ACTION SECTION */
 
@@ -290,8 +294,9 @@ box-shadow:0 !important;
   font-weight: bold;
   margin-bottom: 3em;
 }
+
 .cta h2 {
-  font-weight:bold;
+  font-weight: bold;
 }
 
 /* FOOTER */
@@ -300,10 +305,16 @@ box-shadow:0 !important;
   background: #004990;
   color: #fff;
 }
+
 .footer a {
-  color:#fff;
+  color: #fff;
   text-decoration: underline;
 }
+
+.ecfa-logo {
+  width: 60px;
+}
+
 hr {
   background: #fff;
 }

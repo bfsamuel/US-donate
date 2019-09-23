@@ -35,7 +35,7 @@
 
 <body>
     <header id="_top">
-        <div style="text-align: center;">
+        <div>
             <div class="container">
 
                 <div class="d-flex align-items-center justify-content-between">
@@ -154,8 +154,9 @@
 
     <section class="other-ways py-5">
         <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-sm-6"><img src="img/PAKISTAN_032019_449.jpg" style="width:100%;"></div>
+            <div class="row d-flex">
+                <div class="col-sm-6"><img class="other-ways-image" src="img/PAKISTAN_032019_449.jpg"
+                        style="width:100%;"></div>
                 <div class="col-sm-6">
                     <h3 class="text-center my-4">Other ways to give</h3>
 
@@ -164,9 +165,8 @@
                             <div class="card-header d-flex justify-content-between align-items-center" id="headingOne"
                                 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                                 aria-controls="collapseOne">
-                                <h2 class="my-1"><i class="fas fa-phone"></i>
-                                    Telephone
-                                </h2><i class="fas fa-plus"></i>
+                                <p class="my-1"><i class="fas fa-phone"></i><span>Telephone</span></p><i
+                                    class="fas fa-plus"></i>
                             </div>
 
                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
@@ -182,9 +182,9 @@
                             <div class="card-header d-flex justify-content-between align-items-center" id="headingTwo"
                                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
-                                <h2 class="my-1"><i class="fas fa-sms"></i>
-                                    SMS (Text message) </button>
-                                </h2>
+                                <p class="my-1"><i class="fas fa-sms"></i><span>SMS (Text message)</span></span>
+                                    </button>
+                                </p>
                                 <i class="fas fa-plus"></i>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
@@ -203,9 +203,7 @@
                             <div class="card-header d-flex justify-content-between align-items-center" id="headingThree"
                                 data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
-                                <h2 class="my-1"><i class="fas fa-envelope"></i>
-                                    Mail
-                                </h2>
+                                <p class="my-1"><i class="fas fa-envelope"></i><span>Mail</span></p>
                                 <i class="fas fa-plus"></i>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
@@ -253,7 +251,7 @@
                 </div>
                 <div class="d-flex align-items-center">
                     <span style="padding-right:10px;">Secure donation </span>
-                    <img style="width:50px;" src="https://chalmers.org/wp-content/uploads/2018/09/ecfa_gray.png">
+                    <img class="ecfa-logo" src="https://chalmers.org/wp-content/uploads/2018/09/ecfa_gray.png">
                 </div>
             </div>
             <hr>
@@ -292,7 +290,7 @@
             //update donation amount
             $(".btn.donation_amount").click(function () {
                 const val = $(this).find("input").data("amount");
-                if (!isNaN(val) && val !== undefined) {
+                if (!isNaN(val) && val !== undefined && val >= 1) {
                     clearTags();
                     $(".btn.donation_amount.active").removeClass("active");
                     $(".btn-donate").attr("data-amount", val);
@@ -310,14 +308,14 @@
                         }
                     }
                 });
-                if (!isNaN(val) && val !== undefined && val != "") {
+                if (!isNaN(val) && val !== undefined && val != "" && val >= 1) {
                     clearTags();
                     $(".btn-donate").attr("data-amount", val);
                     $("#inp-other").val(val);
                     $("#amount-473947bc7846").val(val);
-                    $(".donate-buttons button").prop("disabled", false);
+                    $(".donate-buttons button").prop("disabled",false);
                 } else {
-                    $(".donate-buttons button").prop("disabled", true);
+                    $(".donate-buttons button").prop("disabled",true);
                 }
             });
             $(".btn.donation_type").click(function () {
@@ -325,14 +323,14 @@
                 if (val != "o" || val != "m") {
                     clearTags();
                     $(".btn-donate").attr("data-frequency", val);
-                    if (val === "o") {
+                    if (val==="o"){
                         $("#monthlyblock").removeClass("active");
-                        if (!($("#singleblock").hasClass("active"))) {
+                        if (!($("#singleblock").hasClass("active"))){
                             $("#singleblock").addClass("active");
                         }
                     } else {
                         $("#singleblock").removeClass("active");
-                        if (!($("#monthlyblock").hasClass("active"))) {
+                        if (!($("#monthlyblock").hasClass("active"))){
                             $("#monthlyblock").addClass("active");
                         }
                     }
@@ -351,7 +349,6 @@
             }
         });
     </script>
-
 </body>
 
 </html>

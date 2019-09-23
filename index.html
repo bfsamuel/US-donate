@@ -34,9 +34,7 @@
 </head>
 
 <body>
-    <header>
-
-
+    <header id="_top">
         <div style="text-align: center;">
             <div class="container">
 
@@ -61,12 +59,12 @@
                     <div class="donation-type_wrapper">
                         <ul class="btn-group btn-group-toggle no-margin" data-toggle="buttons">
                             <li class="btn donation_type active">
-                                <input type="radio" value="o" name="single" id="single" autocomplete="off"> Single
+                                <input type="radio" value="o" name="single" id="single" autocomplete="off"> Give once
                             </li>
                             <li class="btn donation_type">
                                 <input type="radio" value="m" name="regular" id="regular" checked="checked"
                                     autocomplete="off">
-                                Monthly
+                                Give monthly
                             </li>
                         </ul>
                     </div>
@@ -120,9 +118,10 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">$</span>
                         </div>
-                        <input type="number" class=" other-amount" placeholder="Username" aria-label="Amount"
+                        <input type="number" class=" other-amount" placeholder="Enter an amount" aria-label="Amount"
                             name="otherAmount" id="inp-other" autocomplete="off" placeholder="Please enter an amount"
-                            aria-describedby="basic-addon1" data-numeric-input>
+                            aria-describedby="basic-addon1" data-numeric-input required>
+
                     </div>
 
 
@@ -141,15 +140,15 @@
     </section>
 
     <section class="intro text-center">
-        <strong>
-            <p class="intro-text"><i class="far fa-check-circle"></i> <span>100%</span> of your donation goes to the
-                suffering Church*
-                <br /><i class="far fa-check-circle"></i> Aid from <span>Christians</span> through
-                <span>Christians</span> to
-                <span>Christians</span><br />
-                <i class="far fa-check-circle"></i> <span>100%</span> of your donation is tax deductible</h3>
-        </strong>
-        <p>*When given to a specific project</p>
+
+        <p class="intro-text"><i class="far fa-check-circle"></i> <span>100%</span> of your donation goes to the
+            suffering Church*
+            <br /><i class="far fa-check-circle"></i> Aid from <span>Christians</span> through
+            <span>Christians</span> to
+            <span>Christians</span><br />
+            <i class="far fa-check-circle"></i> <span>100%</span> of your donation is tax deductible</h3>
+
+            <p>*When given to a specific project</p>
     </section>
 
 
@@ -233,7 +232,7 @@
 
     <section class="cta text-center py-5">
         <h2 class="py-3">Please act now to support the persecuted church</h2>
-        <a href="" style="background:#d61215;" class="btn btn-primary">Donate now</a>
+        <a href="#_top" style="background:#d61215;" class="btn btn-primary">Donate now</a>
     </section>
 
     <section class="bible-verse text-center">
@@ -253,26 +252,27 @@
                     <p><strong>Problems or questions? Call: (703) 288-1681</strong></p>
                 </div>
                 <div class="d-flex align-items-center">
-                    <img src="img/lock.png" style="width:40px;"></i>
-                    <span>Secure donation </span>
-                    <img style="width:30px;" src="https://chalmers.org/wp-content/uploads/2018/09/ecfa_gray.png">
+                    <span style="padding-right:10px;">Secure donation </span>
+                    <img style="width:50px;" src="https://chalmers.org/wp-content/uploads/2018/09/ecfa_gray.png">
                 </div>
             </div>
             <hr>
             <div class="d-flex justify-content-between">
                 <div>
-                    <small>© Barnabas Aid 1997 - 2019 All rights reserved. Barnabas Aid & Barnabas Aid are registered
+                    <small>© Barnabas Aid 1997 - 2019 All rights reserved. Barnabas Fund & Barnabas Aid are registered
                         trade
                         marks.
                     </small></div>
-                <div><small><a href="">Terms & conditions</a> | <a href=""></a>Privacy Policy</a></small></div>
+                <div><small><a href="/terms-and-conditions">Terms & conditions</a> | <a
+                            href="/about/privacy-policy">Privacy Policy</a></small></div>
             </div>
         </div>
 
 
         </div>
+        <div id="fc-473947bc7846"></div>
+
     </footer>
-    <div id="fc-473947bc7846"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -315,6 +315,9 @@
                     $(".btn-donate").attr("data-amount", val);
                     $("#inp-other").val(val);
                     $("#amount-473947bc7846").val(val);
+                    $(".donate-buttons button").prop("disabled", false);
+                } else {
+                    $(".donate-buttons button").prop("disabled", true);
                 }
             });
             $(".btn.donation_type").click(function () {

@@ -14,6 +14,9 @@ body {
   border-radius: 0;
 }
 
+.btn.focus, .btn:focus {
+box-shadow:0 !important;
+}
 .btn-primary {
   background: #5091cd;
   border: none;
@@ -22,6 +25,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2em;
+  border-radius: 0;
 }
 
 .btn-donate {
@@ -42,7 +46,10 @@ body {
   cursor: pointer;
   width: 100%;
 }
-
+.btn-donate:disabled {
+  opacity:0.6;
+  cursor: not-allowed;
+}
 
 /* HEADER */
 
@@ -266,6 +273,7 @@ body {
   color: #5091cd;
   margin-bottom: 0.5em;
   border: none;
+  border-radius: 0;
   shadow: none;
   cursor: pointer;
 }
@@ -282,6 +290,9 @@ body {
   font-weight: bold;
   margin-bottom: 3em;
 }
+.cta h2 {
+  font-weight:bold;
+}
 
 /* FOOTER */
 
@@ -289,7 +300,10 @@ body {
   background: #004990;
   color: #fff;
 }
-
+.footer a {
+  color:#fff;
+  text-decoration: underline;
+}
 hr {
   background: #fff;
 }

@@ -80,7 +80,7 @@ input {
 }
 
 
-.mast-header:after {
+.mast-header:before {
   background: url('../img/PAKISTAN_032019_65.jpg') no-repeat;
   background-size: 100%;
   background-position: bottom;
@@ -442,7 +442,7 @@ hr {
     vertical-align: middle;
   }
 
-  .mast-header:after {
+  .mast-header:before {
     display: none;
   }
 

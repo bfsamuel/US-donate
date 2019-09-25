@@ -7,6 +7,7 @@ body {
 input {
   cursor: ;
 }
+
 .btn-group {
   width: 100%;
   padding-left: 0;
@@ -17,6 +18,8 @@ input {
 
 .btn.focus,
 .btn:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
 }
 

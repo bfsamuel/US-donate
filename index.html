@@ -126,9 +126,11 @@
 
 
 
-                    <div class="donate-buttons">
+                    <div class="donate-buttons ">
                         <button data-toggle="modal" data-target="#donateModal-473947bc7846"
-                            class="btn-donate">Donate</button>
+                            class="btn-donate">Donate by card</button>
+                        
+                        <button data-toggle="modal" data-target="#" class="btn-donate" style="background:#eee;color:#000;margin-top:12px;">Donate by <img src="https://barnabasfund.org/sites/default/files/images/assets/donate/paypal.svg" style="width:80px;"></button>
                     </div>
                     <!--</form>-->
                 </div>
@@ -229,15 +231,16 @@
 
 
     <section class="cta text-center py-5">
-        <h2 class="py-3">Please act now to support the persecuted church</h2>
+        <h2 class="py-3">Please act now to support the persecuted Church</h2>
         <a href="#_top" style="background:#d61215;" class="btn btn-primary">Donate now</a>
     </section>
 
     <section class="bible-verse text-center">
         <div class="container">
             <blockquote>
-                <h3><i>Truly I tell you, whatever you did for one of the least of <br />these brothers and sisters of
-                        mine, you did for me. </i><span>(Matthew 25:40)</span></h3>
+                <h3><i>... &ldquo;Truly I tell you, whatever you did for one of the least of <br />these brothers and
+                        sisters of
+                        mine, you did for me.&rdquo; </i><span>(Matthew 25:40)</span></h3>
             </blockquote>
         </div>
     </section>
@@ -296,6 +299,7 @@
                     $(".btn-donate").attr("data-amount", val);
                     $("#inp-other").val(val);
                     $("#amount-473947bc7846").val(val);
+                    $(".donate-buttons button").prop("disabled", false);
                 }
             });
             $("#inp-other").keyup(function () {
@@ -313,9 +317,9 @@
                     $(".btn-donate").attr("data-amount", val);
                     $("#inp-other").val(val);
                     $("#amount-473947bc7846").val(val);
-                    $(".donate-buttons button").prop("disabled",false);
+                    $(".donate-buttons button").prop("disabled", false);
                 } else {
-                    $(".donate-buttons button").prop("disabled",true);
+                    $(".donate-buttons button").prop("disabled", true);
                 }
             });
             $(".btn.donation_type").click(function () {
@@ -323,14 +327,14 @@
                 if (val != "o" || val != "m") {
                     clearTags();
                     $(".btn-donate").attr("data-frequency", val);
-                    if (val==="o"){
+                    if (val === "o") {
                         $("#monthlyblock").removeClass("active");
-                        if (!($("#singleblock").hasClass("active"))){
+                        if (!($("#singleblock").hasClass("active"))) {
                             $("#singleblock").addClass("active");
                         }
                     } else {
                         $("#singleblock").removeClass("active");
-                        if (!($("#monthlyblock").hasClass("active"))){
+                        if (!($("#monthlyblock").hasClass("active"))) {
                             $("#monthlyblock").addClass("active");
                         }
                     }

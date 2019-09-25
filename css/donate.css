@@ -3,20 +3,21 @@ body {
 }
 
 
-.hide {
-  display: none;
+
+input {
+  cursor: ;
 }
-
-
 .btn-group {
   width: 100%;
   padding-left: 0;
   border-radius: 0;
+  cursor: pointer;
+  box-shadow: none;
 }
 
 .btn.focus,
 .btn:focus {
-  box-shadow: 0 !important;
+  box-shadow: none;
 }
 
 .btn-primary {
@@ -31,12 +32,11 @@ body {
 }
 
 .btn-donate {
-  font-size: 18px;
+  font-size: 20px;
   background: #d61215;
   color: rgb(44, 36, 36);
   text-decoration: none;
   text-align: center;
-  line-height: 30px;
   font-weight: bold;
   border-radius: 0;
   font-family: 'Roboto', sans-serif;
@@ -262,9 +262,11 @@ body {
 .other-ways h3 {
   font-weight: bold;
 }
+
 .other-ways-image {
-  width:100%;
+  width: 100%;
 }
+
 .card {
   margin-bottom: 1em;
   border: none;
@@ -283,8 +285,9 @@ body {
   color: #004990;
   font-weight: bold;
 }
-.card-header p span{
-padding-left:15px;
+
+.card-header p span {
+  padding-left: 15px;
 }
 
 

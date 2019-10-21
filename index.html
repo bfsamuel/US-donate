@@ -24,7 +24,7 @@
                 useDefaultButton: false, // hides default button
                 useDonorStore: true,
                 onSuccess: function (donor, donation) {
-                    window.location.href = "/";
+                    window.location.assign("https://barnabasfund.org/us/");
                 }
             });
             f7846.init();
@@ -127,10 +127,13 @@
 
 
                     <div class="donate-buttons ">
-                        <button data-toggle="modal" data-target="#donateModal-473947bc7846"
-                            class="btn-donate">Donate by card</button>
-                        
-                        <button data-toggle="modal" data-target="#" class="btn-donate" style="background:#eee;color:#000;margin-top:12px;">Donate by <img src="https://barnabasfund.org/sites/default/files/images/assets/donate/paypal.svg" style="width:80px;"></button>
+                        <button data-toggle="modal" data-target="#donateModal-473947bc7846" class="btn-donate">Donate by
+                            card</button>
+
+                        <button data-toggle="modal" data-target="#" class="btn-donate"
+                            style="background:#eee;color:#000;margin-top:12px;font-size:1.2em;">Donate by <img
+                                src="https://barnabasfund.org/sites/default/files/images/assets/donate/paypal.svg"
+                                style="width:80px;"></button>
                     </div>
                     <!--</form>-->
                 </div>
@@ -174,9 +177,8 @@
                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Telephone: (703) 288-1681<br />
-                                    Fax: (703) 288-1682<br />
-                                    Toll Free: 1-866-936-2525<br />
+                                    <strong>Telephone:</strong> (703) 288-1681<br />
+                                    <strong>Toll Free:</strong> 1-866-936-2525<br />
                                 </div>
                             </div>
                         </div>

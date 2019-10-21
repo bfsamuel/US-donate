@@ -3,119 +3,92 @@ body {
 }
 
 
-
-input {
-  cursor: ;
+.hide {
+  display: none;
 }
+
 
 .btn-group {
   width: 100%;
   padding-left: 0;
   border-radius: 0;
-  cursor: pointer;
-  box-shadow: none;
-}
-
-.btn.focus,
-.btn:focus {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
 }
 
 .btn-primary {
   background: #5091cd;
-  border: none;
   color: #fff;
   padding: 0.5em 2em;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2em;
-  border-radius: 0;
 }
 
 .btn-donate {
-  font-size: 20px;
+  font-size: 18px;
   background: #d61215;
-  color: rgb(44, 36, 36);
+  color: #fff;
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
   font-weight: bold;
   border-radius: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   border: 0px;
   color: #ffffff;
-  padding: 0.6em 1em;
+  padding: 1em 1.5em;
   transition: 0.2s background;
   cursor: pointer;
-  width: 100%;
 }
 
-.btn-donate:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
 
 /* HEADER */
 
-.logo img {
+.logo {
   text-align: center;
   padding: 1em;
-  width: 150px;
+  margin: 222px
 }
 
 #logo {
-  padding: 1em 0;
-}
-
-#logo img {
-  width: 150px;
+  padding: 1em;
 }
 
 .secure-donation {
   padding-right: 1em;
   color: #2e3131;
   margin: 0;
-  font-size: 1em;
-}
-
-
-.mast-header:before {
-  background: url('../img/PAKISTAN_032019_65.jpg') no-repeat;
-  background-size: 100%;
-  background-position: bottom;
-  padding-bottom: 61%;
-  content: "";
-  display: block;
 }
 
 /**** FORM STYLES ****/
+
+
 
 /**** STEP 1 - DONATE BOX ****/
 
 /* MAIN DONATE BOX */
 
 .donatebox {
+  display: block;
   text-align: center;
-  width: 100%;
-  padding: 2em 0;
-  /*
-  border-top: 1px solid #eee;
+  width: 500px;
+  padding: 3em 2em 2em 2em;
+  opacity: ;
+  border-top: 6px solid #;
   border-bottom: 1px solid #eee;
   border-right: 1px solid #eee;
   border-left: 1px solid #eee;
-  */
   background-color: rgba(255, 255, 255);
-  margin: 0 0 0;
-
+  margin: 4em 0;
 }
 
 .donatebox-h1 {
-  color: #004990;
-  font-weight: 600;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
   text-align: center;
   padding: 0 0 1em 0;
-  font-size: 20px;
+  font-size: 35px;
 }
 
 .donatebox h2 {
@@ -152,15 +125,6 @@ input {
   color: #fff;
 }
 
-#singleblock,
-#monthlyblock {
-  display: none;
-}
-
-#singleblock.active,
-#monthlyblock.active {
-  display: inline-block;
-}
 
 /* Donation amount */
 
@@ -170,17 +134,17 @@ input {
   margin: 0 auto;
   display: inline-block;
   text-align: center;
-  padding: 0;
+  padding: 1em 0 0 0;
   width: 100%;
 }
 
 .donation_amount {
   border: 2px solid #5091cd;
-  padding: 1em 0;
-  font-size: 1em;
+  padding: 1em;
+  font-size: 1.2em;
   text-align: center;
   font-weight: bold;
-  color: #004990;
+  color: #5091cd;
   border-radius: 0;
   text-transform: none;
   background: #fff;
@@ -198,77 +162,50 @@ input {
 }
 
 .other-amount {
-  border: none;
+  border: 2px solid #5091cd;
   height: 50px;
-  width: calc(100% - 35px);
-  padding: 10px 0 10px 0;
-  border-radius: 0;
-  -webkit-appearance: none;
+  width: 100px;
+  padding: 10px 0 10px 10px;
+}
 
+#otheramount {
+  transition: all 1s ease-in;
+  padding: 1em 0;
+}
+
+.other-amount-text {
+  font-size: 20px;
 }
 
 .other-amount-pound {
   font-size: 25px;
-  border: none;
   font-weight: bold;
   color: #004990;
-  width: 30px;
-  display: inline-block;
-  vertical-align: sub;
 }
 
-.input-group {
-  border: 2px solid #5091cd;
+.donation-projectchoice_wrapper {
+  padding: 0;
 }
 
-.donate-buttons {
-  padding: 0 0 0.5em 0;
-}
 
-/* FACTS/INTRO SECTION */
-
-.intro {
-  background: #eee;
-  padding: 3em 1em;
-}
-
-.intro-text {
-  color: #5091cd;
-  font-weight: bold;
-}
-
-.intro p span {
-  color: #004990;
-}
-
-/* BIBLE VERSE SECTION */
-
-.bible-verse {
-  padding: 4em 0;
-  background: #5091cd;
+/* Other ways to give */
+.other-ways-heading {
   color: #fff;
-}
-
-.blockquote {
-  font-weight: 300;
-  color: #fff;
-
-}
-
-.bible-verse blockquote span {
+  background-color: none;
+  cursor: pointer;
   font-weight: bold;
-  color: #fff;
+  text-decoration: underline;
 }
 
-/* OTHER WAYS TO GIVE SECTION */
+.other-ways-icon {
+  width: 1em;
+}
 
-.other-ways h3 {
+.other-ways-text {
   font-weight: bold;
+  padding-left: 1em;
 }
 
-.other-ways-image {
-  width: 100%;
-}
 
 .card {
   margin-bottom: 1em;
@@ -276,199 +213,72 @@ input {
 }
 
 .card-header {
+  background: #;
   color: #5091cd;
   margin-bottom: 0.5em;
   border: none;
-  border-radius: 0;
   shadow: none;
   cursor: pointer;
 }
 
-.card-header p {
+.card-header h2 {
   color: #004990;
+  font-size: 1em;
+}
+
+.mast-header {
+  background: url('../img/PAKISTAN_032019_65.jpg');
+  background-size: cover;
+  background-position: 50%;
+  padding: 3em 0;
+}
+
+.facts {
+  background: #eee;
+}
+
+.facts h3 {
+  color: #5091cd;
   font-weight: bold;
 }
 
-.card-header p span {
-  padding-left: 15px;
+.facts h3 span {
+  color: #004990;
 }
-
-
-/* CALL TO ACTION SECTION */
 
 .cta {
   font-weight: bold;
-  margin-bottom: 3em;
 }
-
-.cta h2 {
-  font-weight: bold;
-}
-
-/* FOOTER */
 
 .footer {
   background: #004990;
   color: #fff;
 }
 
-.footer a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.ecfa-logo {
-  width: 60px;
-}
-
 hr {
   background: #fff;
 }
 
-#fc-473947bc7846 .header__amount--show {
-  margin-top: 1em !important;
-}
-
-.input-group-text {
-  border: none;
-  background: none;
-  font-size: 1.3em;
-  color: #5091cd;
+.bible-verse {
+  padding: 7em;
   font-weight: bold;
 }
 
-/* Extra small devices (portrait phones, less than 576px)
- No media query for `xs` since this is the default in Bootstrap */
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-  .donatebox {
-    text-align: center;
-    width: 450px;
-    padding: 2.5em 2em;
-    border: 1px solid #eee;
-    background-color: rgba(255, 255, 255);
-    margin: 6em 0;
-    vertical-align: middle;
-  }
-
-  .donatebox-h1 {
-    color: #004990;
-    font-weight: 600;
-    text-align: center;
-    padding: 0 0 1em 0;
-    font-size: 20px;
-  }
-
-  /* Donation type (single or regular) */
-
-  .donation-type_wrapper {
-    list-style-type: none;
-    text-align: center;
-    margin: 0 auto;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-  }
-
-  .donation_type {
-    background: #fff;
-    font-size: 1em;
-    font-weight: bold;
-    border: 2px solid #5091cd;
-    width: 100%;
-    padding: 0.5em;
-    border-radius: 0;
-    color: #004990;
-
-  }
-
-  .donation_type.active {
-    background: #5091cd;
-    border: 2px solid #5091cd;
-    color: #fff;
-  }
-
-  /* Donation amount */
-
-  .donation-amount_wrapper {
-    list-style-type: none;
-    text-align: center;
-    margin: 0 auto;
-    display: inline-block;
-    text-align: center;
-    padding: 0;
-    width: 100%;
-  }
-
-  .donation_amount {
-    border: 2px solid #5091cd;
-    padding: 0.5em;
-    color: #004990;
-    font-size: 1em;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 0;
-    text-transform: none;
-    background: #fff;
-    width: 100%;
-  }
-
-  .donation_amount.active {
-    background: #5091cd;
-    border: 2px solid #5091cd;
-    color: #fff;
-  }
-
-  .amount-hide-radio {
-    visibility: hidden;
-  }
-
-  .other-amount-pound {
-    font-size: 25px;
-    font-weight: bold;
-    color: #fff;
-    width: 30px;
-    display: inline-block;
-    vertical-align: sub;
-    padding-left: 5px;
-  }
-
-  .mast-header {
-    background: url('../img/PAKISTAN_032019_65.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: calc(100% - 85px);
-    vertical-align: middle;
-  }
-
-  .mast-header:before {
-    display: none;
-  }
-
-  .intro {
-    background: #eee;
-    padding: 3em 1em;
-  }
-
-  .intro-text {
-    color: #5091cd;
-    font-weight: bold;
-    font-size: 1.6em;
-  }
-
-  .intro p span {
-    color: #004990;
-  }
+.bible-verse h3 {
+  font-weight: light;
 }
 
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
 
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
 
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }

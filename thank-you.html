@@ -47,16 +47,16 @@
     </header>
 
     <section class="" style="background:#5091cd;color:#fff;">
-        <div class="container-fluid">
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="d-flex align-items-center">
 
-                    <div class="col col-lg-7 col-md-6 clearfix p-0">
+                    <div class="col col-lg-7 p-0">
                         <img src="img/PAKISTAN_032019_677.jpg" style="width:100%;">
                     </div>
-                    <div class="col col-lg-5 col-md-6">
-                        <div class="col-sm-10 mx-auto" style>
-                            <div class="py-3">
+                    
+                    <div class="col col-lg-5">
+                        <div class="mx-auto" style>
+                            <div class="p-5">
                                 <h1 style="color:#fff;"><strong>Thank you for your donation <br />to Barnabas
                                         Aid</strong>
                                 </h1>
@@ -75,7 +75,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
 
@@ -129,7 +128,73 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    
+
+    <!--TODO: Put in own script file-->
+    <script>
+        $(document).ready(function () {
+            //update donation amount
+            $(".btn.donation_amount").click(function () {
+                const val = $(this).find("input").data("amount");
+                if (!isNaN(val) && val !== undefined && val >= 1) {
+                    clearTags();
+                    $(".btn.donation_amount.active").removeClass("active");
+                    $(".btn-donate").attr("data-amount", val);
+                    $("#inp-other").val(val);
+                    $("#amount-473947bc7846").val(val);
+                    $(".donate-buttons button").prop("disabled", false);
+                }
+            });
+            $("#inp-other").keyup(function () {
+                const val = $(this).val();
+                $(".btn.donation_amount.active").removeClass("active");
+                $.each($(".btn.donation_amount"), function (index, item) {
+                    if ($(this).find("input").data("amount") == val) {
+                        if (!($(this).hasClass("active"))) {
+                            $(this).addClass("active");
+                        }
+                    }
+                });
+                if (!isNaN(val) && val !== undefined && val != "" && val >= 1) {
+                    clearTags();
+                    $(".btn-donate").attr("data-amount", val);
+                    $("#inp-other").val(val);
+                    $("#amount-473947bc7846").val(val);
+                    $(".donate-buttons button").prop("disabled", false);
+                } else {
+                    $(".donate-buttons button").prop("disabled", true);
+                }
+            });
+            $(".btn.donation_type").click(function () {
+                const val = $(this).find("input[type=radio]").val();
+                if (val != "o" || val != "m") {
+                    clearTags();
+                    $(".btn-donate").attr("data-frequency", val);
+                    if (val === "o") {
+                        $("#monthlyblock").removeClass("active");
+                        if (!($("#singleblock").hasClass("active"))) {
+                            $("#singleblock").addClass("active");
+                        }
+                    } else {
+                        $("#singleblock").removeClass("active");
+                        if (!($("#monthlyblock").hasClass("active"))) {
+                            $("#monthlyblock").addClass("active");
+                        }
+                    }
+                }
+            });
+            $(".btn.donation_amount.active").click();
+            $(".btn.donation_type.active").click();
+
+            function clearTags() {
+                const btn = $(".btn-donate")[0];
+                $.each(btn, function (key, element) {
+                    if (key.substr(0, 6) == "jQuery") {
+                        delete btn[key];
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
